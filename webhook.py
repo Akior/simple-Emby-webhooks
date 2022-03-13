@@ -3,7 +3,7 @@ import requests
 
 server = "http://127.0.0.1:8096";
 Text='Hello'
-Header='';
+Header='warn';
 TimeoutMs='1500';
 api_key='XXXXXX';
 
