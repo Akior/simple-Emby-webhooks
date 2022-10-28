@@ -1,4 +1,4 @@
-# simple Emby php webhooks
+# simple Emby php webhooks for send message to client
 Get webhooks from Emby, than generate api request return for push message by session_id
 
 # Emby to telegram work with new beta version of Emby (4.8.0.15+) with new event library.new
