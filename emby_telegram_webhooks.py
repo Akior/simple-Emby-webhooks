@@ -1,10 +1,5 @@
 from flask import Flask,request,json
 import requests
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
-import time
-import fileinput
-import shutil
 
 bot_id="botXXXXXXXXXXXXXXXXXXXXXXXX"
 urls="https://api.telegram.org/"+bot_id+"/sendPhoto"
