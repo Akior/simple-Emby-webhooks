@@ -18,9 +18,9 @@ def index():
 #check\get series
             if "SeriesId" in event_data['Item']:
                if 'Overview' in event_data['Item']:
-                  body = {"chat_id":chat_id, "photo":server+"/Items/"+event_data['Item']['SeriesId']+"/Images/Primary", "caption": "New series\n"+event_data['Item']['SortName']+"\nDescription:\n"+event_data['Item']['Overview']+"\nWatch:\n"+"<a href='"+server_watch+server+"/web/index.html#!/item?id="+str(event_data['Item']['Id'])+"&serverId="+event_data['Item']['ServerId']+"'>Emby</a>", "parse_mode": "html"}
+                  body = {"chat_id":chat_id, "photo":server+"/Items/"+event_data['Item']['SeriesId']+"/Images/Primary", "caption": "New series\n"+event_data['Item']['SortName']+"\nDescription:\n"+event_data['Item']['Overview']+"\nWatch:\n"+"<a href='"+server+"/web/index.html#!/item?id="+str(event_data['Item']['Id'])+"&serverId="+event_data['Item']['ServerId']+"'>Emby</a>", "parse_mode": "html"}
                else:
-                  body = {"chat_id":chat_id, "photo":"https://emby.media/resources/shutterstock_1434923111.jpg", "caption": "New series\n"+event_data['Item']['SortName']+"\nWatch:\n"+"<a href='"+server_watch+server+"/web/index.html#!/item?id="+str(event_data['Item']['Id'])+"&serverId="+event_data['Item']['ServerId']+"'>Emby</a>", "parse_mode": "html"}
+                  body = {"chat_id":chat_id, "photo":"https://emby.media/resources/shutterstock_1434923111.jpg", "caption": "New series\n"+event_data['Item']['SortName']+"\nWatch:\n"+"<a href='"+server+"/web/index.html#!/item?id="+str(event_data['Item']['Id'])+"&serverId="+event_data['Item']['ServerId']+"'>Emby</a>", "parse_mode": "html"}
             else:
                print("Key SeriesId doesn't exist in JSON data event_data['Item']")
 #check\get movies
